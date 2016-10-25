@@ -73,7 +73,7 @@ function MainController($scope, $log) {
 
 		_.forEach(vm.coins, function(c, i) {
 			$scope.$watch('vm.coins[' + i + '].count', calculatePageSettings);
-		})
+		});
 	}
 
 	function paperName(p) {
